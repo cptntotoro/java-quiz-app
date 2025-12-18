@@ -18,10 +18,12 @@ public class Question {
 
     private String topic;
     private String question;
+
+    @Column(length = 5000)
     private String answer;
 
     @Column(name = "is_known")
-    private boolean known = false;
+    private boolean isKnown = false;
 
     @Column(name = "view_count")
     private int viewCount = 0;
